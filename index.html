@@ -3,11 +3,22 @@
 
 <link rel="stylesheet" type="text/css" href="C:/Users/user/Desktop/includclone/mystyle.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<body ng-app="">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<div ng-include="'navigation.html'"></div>
-<div ng-include="'content.html'"></div>
+<script> 
+$(function()
+{
+$("#Navigation").load("navigation.html"); 
+$("#Content").load("content.html");
+});
+</script> 
+
+<body>
+
+<p>test text</p>
+
+<div id="Navigation"></div>
+<div id="Content"></div>
 
 </body>
 </html>
